@@ -16,7 +16,7 @@ pipeline {
             steps {
               sh '''
                   #oc start-build --from-build=<build_name>
-                  oc start-build -F abdel74-dev
+                  oc start-build -F abdel74-dev --from-dir=.
               '''
             }
         }
